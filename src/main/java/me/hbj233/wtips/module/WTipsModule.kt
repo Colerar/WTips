@@ -81,9 +81,9 @@ object WTipsModule : SimpleEasyAPIModule(){
             msg.getFormattedWTips(player)
         }
 
-        /*MessageFormatAPI.registerSimpleFormatter(object : SimpleMessageFormatter {
+        MessageFormatAPI.registerSimpleFormatter(object : SimpleMessageFormatter {
             override fun format(message: String): String = message.getFormattedWTips(null)
-        })*/
+        })
 
 
         SimplePluginTaskAPI.delayRepeating(taskDelay, taskDelay) { _, _ ->

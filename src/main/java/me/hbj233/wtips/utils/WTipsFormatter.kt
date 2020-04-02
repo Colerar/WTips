@@ -32,6 +32,9 @@ internal fun String.getFormattedWTips(player: Player? = null) : String {
             else -> "未知"
         }
         val handItem = player.inventory.itemInHand
+        val x = player.x.toInt().toString()
+        val y = player.y.toInt().toString()
+        val z = player.z.toInt().toString()
 
         final = final.replace(PLAYER_NAME, player.name)
         final = final.replace(PLAYER_DISPLAY_NAME, player.displayName)
@@ -44,15 +47,15 @@ internal fun String.getFormattedWTips(player: Player? = null) : String {
         final = final.replace(PLAYER_FOOD_LEVEL, player.foodData.level.toString())
         final = final.replace(PLAYER_MAX_FOOD_LEVEL, player.foodData.maxLevel.toString())
         final = final.replace(PLAYER_DIRECTION, player.direction.toString())
-        final = final.replace(PLAYER_POSITION, player.position.toString())
+        final = final.replace(PLAYER_POSITION, "X:$x, Y:$y, Z:$z")
         final = final.replace(PLAYER_EXP, player.experience.toString())
         final = final.replace(PLAYER_EXP_LEVEL, player.experienceLevel.toString())
         final = final.replace(PLAYER_EXP_TO_NEXT, Player.calculateRequireExperience(player.experienceLevel).toString())
         final = final.replace(PLAYER_HAND_ITEM, handItem.name)
         final = final.replace(PLAYER_HAND_ITEM_META, handItem.damage.toString())
-        final = final.replace(PLAYER_X, player.x.toString())
-        final = final.replace(PLAYER_Y, player.y.toString())
-        final = final.replace(PLAYER_Z, player.z.toString())
+        final = final.replace(PLAYER_X, x)
+        final = final.replace(PLAYER_Y, y)
+        final = final.replace(PLAYER_Z, z)
         final = final.replace(PLAYER_GAMEMODE, displayGamemode)
         final = final.replace(PLAYER_OP, player.isOp.toString())
         final = final.replace(PLAYER_PING, player.ping.toString())

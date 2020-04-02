@@ -1,7 +1,5 @@
 package me.hbj233.wtips.placeholder
 
-internal const val WTIPS_TITLE  = "%wtips_title%"
-
 internal const val PLAYER_NAME = "%player_name%"
 internal const val PLAYER_DISPLAY_NAME = "%player_display_name%"
 internal const val PLAYER_UUID = "%player_uuid%"
