@@ -14,9 +14,7 @@
 ## 依赖
 本插件依赖于:
 - [KotlinLib](https://nukkitx.com/resources/kotlinlib.48/)
-- [GUI](https://github.com/Him188/GUI)
 - [EasyAPI](https://github.com/WetABQ/EasyAPI-Nukkit)
-- [EconomyAPI](https://nukkitx.com/resources/economyapi.14/)
 ## Formatter
 ### 基础 Formatter
 - %player_name% : 玩家名称
@@ -60,6 +58,6 @@
 - %time_hour% : 时 
 - %time_minute% : 分
 - %time_second% : 秒
-- %player_ecomoney% : 玩家金钱
+- %player_ecomoney% : 玩家金钱(Economy API)
 ### 外部 Formatter (使用 EasyAPI)
 - %wprefix_prefix% : 玩家使用的 WPrefix 称号.
